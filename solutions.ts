@@ -86,6 +86,20 @@ class Student extends Person{
 }
 
 
+// problem 7
+
+function getIntersection(a:number[], b:number[]): number[]{
+    const result: number[] = [];
+    for(let i = 0; i<a.length; i++){
+        for(let j = 0; j<b.length; j++){
+            if(a[i] === b[j]){
+                result[result.length] = a[i];
+                break;
+            }
+        }
+    }
+    return result;
+}
 
 
 
