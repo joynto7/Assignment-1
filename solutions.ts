@@ -43,3 +43,24 @@ function getProperty<T,K extends  keyof T>(obj: T, key:K): T[K]{
 }
 
 
+// problem-5
+interface Book {
+    title:String;
+    author:String;
+    publishedYear:Number;
+}
+
+function toggleReadStatus(book:Book){
+    let updatedBook ={
+        title: book.title,
+        author: book.author,
+        publishedYear: book.publishedYear,
+        isRead: true,
+    };
+    
+    return updatedBook;
+}
+
+
+
+
