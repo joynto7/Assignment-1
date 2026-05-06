@@ -25,7 +25,7 @@
 
 ## Conculsion
 
-So Type narrowing means defines the exact type so that complier don not make any mistake. 
+So Type narrowing means defines the exact type so that complier do not make any mistake. 
    
   
 
