@@ -89,18 +89,19 @@ acoording to this code:
 
 Polymorphism allows different to be used through the same interface.
 
-   class person 
+   class person {
       name: string;
       age: number;
       colour: string;
       address: string;
+   }
   
-      constructor( name:string,age:number,colour:string,address:string )
+      constructor( name:string,age:number,colour:string,address:string ){
           this.name = name ;
           this.age = age ;
           this.colour = colour ;
           this.address = address ;
-      
+      }
   
       getInfo(){
           console.log(`${this.name} is Good      Person. Her age is ${this.age}`);
