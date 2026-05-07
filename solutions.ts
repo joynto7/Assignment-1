@@ -80,7 +80,7 @@ class Student extends Person{
 }
 
 
-// problem 7
+
 
 function getIntersection(a:number[], b:number[]): number[]{
     const result: number[] = [];
