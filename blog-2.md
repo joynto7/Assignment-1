@@ -13,9 +13,11 @@ Encapsulation is about hiding internal state and exposing only what's necessary.
 
 For Exmaple:
 
-Class BankAccount {
-   private balance: number;
-   constractor(intialBalance: number){
+```ts
+Class BankAccount { 
+    private balance: number;
+
+    constractor(intialBalance: number){
        this.balance = initialBalance;
    }
    deposite(amount: number ){
@@ -24,14 +26,14 @@ Class BankAccount {
    getBalance(){
        return this.balance;
    }
-
+```
 Here No One can Directly access on account.balance.
 
 ### Abstraction
 
 Abstraction means shows only what the user needs,hiding how it works internally.Here is a exaple for demonstrate:
-
- abstract class flower{
+```ts
+   abstract class flower{
    abstract smell():void;
    abstract color():void;
    abstract temarature():void
@@ -49,14 +51,15 @@ Abstraction means shows only what the user needs,hiding how it works internally.
         console.log('slightly clod');
     }
 
- }
+ } ```
+ 
 
 Here under abstract class "Flower" ther are Three abstract Classes. Users will not see these classes.
 
 ### Inheritance
 
 Inheritance allows you to extend logic instead of duplicating or copying it. Here is a example:
-
+```ts
  class Animal {
     name:string;
     sound:string;
@@ -79,6 +82,7 @@ Inheritance allows you to extend logic instead of duplicating or copying it. Her
         console.log(" abe shale ");
     }
  }
+ ```
 
 acoording to this code:
 1) It reduces code Duplication
@@ -89,6 +93,7 @@ acoording to this code:
 
 Polymorphism allows different to be used through the same interface.
 
+```ts
    class person {
       name: string;
       age: number;
@@ -114,6 +119,7 @@ Polymorphism allows different to be used through the same interface.
           console.log(`${this.name} watches movie and Action Moives like much more than any other movie`);
   
       }
+```
   
    
 
