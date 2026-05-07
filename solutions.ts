@@ -1,16 +1,10 @@
-// Problem-1
+
 
 function filterEvenNumbers(numbers: number[]): number[] {
-    const evenNumbers: number[] = [];
-    for(let i =0 ; i<numbers.length; i++){
-        if(numbers[i] % 2 === 0){
-            evenNumbers[evenNumbers.length] = numbers[i];
-        }  
-    }
-     return evenNumbers;
+  return numbers.filter((num) => num % 2 === 0);
 }
 
-// problem-2
+
 
 function reverseString(str: string): string{
     let resversed = "";
@@ -21,7 +15,7 @@ function reverseString(str: string): string{
     return resversed;
 }
 
-// problem-3
+
 
 type StringOrNumber = string | number;
 
@@ -36,14 +30,14 @@ function checkType(value: StringOrNumber): "String" | "Number"
 }
 
 
-// problem 4
+
 
 function getProperty<T,K extends  keyof T>(obj: T, key:K): T[K]{
     return obj[key];
 }
 
 
-// problem-5
+
 interface Book {
     title:String;
     author:String;
@@ -61,7 +55,7 @@ function toggleReadStatus(book:Book){
     return updatedBook;
 }
 
-// problem-6
+
 class Person {
     name:string;
     age: number;
@@ -81,7 +75,7 @@ class Student extends Person{
     }
 
     getDetails(): string{
-        return "Name:" + this.name + ", Age: " + this.age + ", Grade:" +this.grade ; 
+        return "Name: " + this.name + ", Age: " + this.age + ", Grade: " +this.grade ; 
     }
 }
 
